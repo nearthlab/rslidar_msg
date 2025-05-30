@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 project(rslidar_msg)
 
 # Default to C99
@@ -25,7 +25,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/RslidarPacket.msg"
   DEPENDENCIES builtin_interfaces std_msgs
- )
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
